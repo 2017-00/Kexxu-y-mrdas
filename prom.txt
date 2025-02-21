@@ -1,0 +1,27 @@
+KEXXU
+[1] Precision en eje X: 1.89734985241847"
+> print(paste("Precision en eje Y:", y_prom))
+[1] "Precision en eje Y: 2.33210385823564"
+> print(paste("Exactitud en eje X:", x_root))
+[1] "Exactitud en eje X: 2.68283630215323"
+> print(paste("Exactitud en eje Y:", y_root))
+[1] "Exactitud en eje Y: 2.93313113003259"
+TOBII
+[1] "Precision en eje X: 1.4754120438453"
+> print(paste("Precision en eje Y:", y_prom))
+[1] "Precision en eje Y: 2.19529513524531"
+> print(paste("Exactitud en eje X:", x_root))
+[1] "Exactitud en eje X: 2.06005121726441"
+> print(paste("Exactitud en eje Y:", y_root))
+[1] "Exactitud en eje Y: 2.87128532940083"
+
+Python - Kexxu 2-2
+Promedio de la columna dif_x: 51.1904990182504
+Promedio de la columna dif_y: 62.92016209519753
+Promedio de la columna dif_x en grados: 1.8973498524184729
+Promedio de la columna dif_y en grados: 2.3321038582356386
+Python -T obii2-2
+Promedio de la columna dif_x: 39.806616942946135
+Promedio de la columna dif_y: 59.22906274891837
+Promedio de la columna dif_x en grados: 1.4754120438452978
+Promedio de la columna dif_y en grados: 2.1952951352453067
