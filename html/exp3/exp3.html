@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eyetracker</title>
+    <script src="https://unpkg.com/jspsych@7.3.4"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.2.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.3"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.3"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.3"></script>
+    <link href="exp.css" rel="stylesheet" type="text/css" />
+    <style>
+    </style>
+  </head>
+  <body></body>
+  <script>
+     /* initialize jsPsych */
+     var jsPsych = initJsPsych({
+      on_finish: function() {
+        jsPsych.data.displayData();
+      }
+    });
+
+    var preload = {
+        type: jsPsychPreload,
+        images: ['img/blue.png']
+      }
+
+    /* create timeline */
+    var timeline = [];
+
+    var instrucciones1 = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus:  '<p style="color:white;">Presiona enter cuando los lentes estén calibrados</p>'
+      }
+    timeline.push(instrucciones1);
+
+    var calibrar = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<div style="font-size:60px;color:white;">+</div>',
+    };
+    timeline.push(calibrar);
+
+    var instrucciones2 = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus:  '<p style="color:white;">Sigue los puntos y mantén la mirada fija</p>'
+      }
+    timeline.push(instrucciones2);
+    
+    //Cada objetivo se mostró individualmente durante 4 segundos, con un intervalo entre objetivos de un segundo
+    //////////////////////////PUNTOS
+    var punto1  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='width: 11.88px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto1);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto2  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='float: left; width: 11.88px;margin: 263.25px 348.435px 0px 0px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto2);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto3  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='width: 11.88px; margin: 263.25px 0px 0px 348.435px;  ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto3);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto4  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='float: left; width: 11.88px;margin: 0px 348.435px 263.25px 0px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto4);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto5  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='float: left; width: 11.88px;margin: 0px 0px 263.25px 348.435px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto5);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto6  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='width: 11.88px; margin: 263.25px 0px 0px 0px;  ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto6);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto7  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='float: left; width: 11.88px;margin: 0px 0px 263.25px 0px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto7);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto8  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='float: left; width: 11.88px;margin: 0px 348.435px 0px 0px; ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto8);
+
+    var inter  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: "",
+      choices: "NO_KEYS",
+      trial_duration: 1000,
+      post_trial_gap: 0
+    };
+    timeline.push(inter);
+
+    var punto9  = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `<img style='width: 11.88px; margin: 0px 0px 0px 348.435px;  ' src='img/blue.png'></img>`,
+      choices: "NO_KEYS",
+      trial_duration: 4000,
+      post_trial_gap: 1000
+    };
+    timeline.push(punto9);
+
+    var calibrar = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<div style="font-size:60px;color:white;">+</div>',
+    };
+    timeline.push(calibrar);
+    jsPsych.run(timeline);
+  </script>
+</html>
+
