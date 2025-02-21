@@ -1,0 +1,81 @@
+Exp 2-1
+	Kexxu
+		Varianza: 	8623.54
+		Desviaciòn: 	 92.86302
+	Tobbi
+		Varianza:	9754.275
+		Desviaciòn:	98.76373
+Exp 2-2
+	Kexxu
+		Varianza:	6062.702
+		Desviaciòn:	77.86335
+	Tobii
+		Varianza:	12157.61
+		Desviaciòn:	110.2615
+	
+Kexxu	
+[1] "Precision en eje X: 1.89734985241847"
+[1] "Precision en eje Y: 2.33210385823564"
+[1] "Exactitud en eje X: 2.68283630215323"
+[1] "Exactitud en eje Y: 2.93313113003259"
+Tobii
+[1] "Precision en eje X: 1.4754120438453"
+[1] "Precision en eje Y: 2.19529513524531"
+[1] "Exactitud en eje X: 2.06005121726441"
+[1] "Exactitud en eje Y: 2.87128532940083"
+
+Kexxu2-2
+82.9090909090909	3.0729833546735
+83.7551020408163	3.10434032768037
+
+Tobii2-2
+2.67409470752089	0.0991139624729759
+26.865671641791		0.995762477457042
+
+
+WASSO///////////////////
+KEXXU
+[1] "Precision en eje X: 3.21267864806445"
+[1] "Precision en eje Y: 3.41646582387924"
+TOBII
+[1] "Precision en eje X: 1.30877732549564"
+[1] "Precision en eje Y: 1.06537609442702"
+
+CAT/////////////////////
+KEXXU
+[1] "Precision en eje X: 2.15526955238092"
+[1] "Precision en eje Y: 2.02813641830734"
+TOBII
+[1] "Precision en eje X: 1.16798802896395"
+[1] "Precision en eje Y: 1.46984239770863"
+
+GAMBO///////////////////
+KEXXU
+[1] "Precision en eje X: 0.579253030142578"
+[1] "Precision en eje Y: 0.890991884320276"
+TOBII
+[1] "Precision en eje X: 1.75792171618269"
+[1] "Precision en eje Y: 2.53023763746316"
+
+EMA////////////////
+KEXXU
+[1] "Precision en eje X: 1.45825919305335"
+[1] "Precision en eje Y: 3.27266735757903"
+TOBII
+[1] "Precision en eje X: 1.75974481706376"
+[1] "Precision en eje Y: 1.73150557786404"
+
+LIZ//////////////
+KEXXU
+[1] "Precision en eje X: 2.15053196119968"
+[1] "Precision en eje Y: 2.06255671337472"
+TOBII
+[1] "Precision en eje X: 1.40681909900033"
+[1] "Precision en eje Y: 4.01152174411297"
+
+
+
+
+
+
+
