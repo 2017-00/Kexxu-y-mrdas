@@ -1,0 +1,9 @@
+Cada participante hizo tres experimentos, el 2-1 y el 2-2 es el mismo pero con diferentes distancias de los puntos de interès. El exp 1 està incompleto :"D
+Te recomiendo a entrar a revisar la carpeta de Wasso, creo que es la que està mejor comentada
+En la carpeta final està la union de los resultados de los 5 participantes
+El pdf adjunto que se llama team_ojos es el reporte de lo que hemos hecho con los kexxu y otros eyectracker, pero lo pongo para que tengas contexto de los experimentos
+En la carpeta de yolo primero se extraen las predicciones que arroja por cadad participante con Analisis_Yolo, despuès lo que se extrajo se plotea en Ploteo_predicciones
+
+-----
+1px = 26.9895grados
+
