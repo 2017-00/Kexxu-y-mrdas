@@ -1,0 +1,29 @@
+
+
+hist(locs_df$ang,
+     breaks = 100,
+     main = "Histograma angulos",
+     xlab = "Valores",
+     ylab = "Frecuencia")
+
+plot(locs_df$dif_x,
+     type = "p",
+     col = locs_df$grupo,
+     main = "Diferencias de Distancias en eje X",
+     xlab = "Índice",  
+     ylab = "Valores de diferencia",  
+     pch = 16,
+     cex = 0.7)
+modelo_regresion <- lm(locs_df$dif_x ~ seq_along(locs_df$dif_x))
+abline(modelo_regresion, col = "red", lwd = 2)
+
+plot(locs_df$dif_y,
+     type = "p",
+     col = locs_df$grupo,
+     main = "Diferencias de Distancias en eje Y",
+     xlab = "Índice",  
+     ylab = "Valores de diferencia",  
+     pch = 16,
+     cex = 0.7) 
+modelo_regresion <- lm(locs_df$dif_y ~ seq_along(locs_df$dif_y))
+abline(modelo_regresion, col = "red", lwd = 2)
